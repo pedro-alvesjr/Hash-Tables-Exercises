@@ -17,6 +17,16 @@ def first_non_repeating_char(string):
             return char
     return None
 
+def two_sum(nums, target):
+    num_map = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in num_map:
+            return [num_map[complement], i]
+        num_map[num] = i
+    return[]
+
+
 print( first_non_repeating_char('leetcode') )
 
 print( first_non_repeating_char('hello') )
