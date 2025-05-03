@@ -26,43 +26,19 @@ def two_sum(nums, target):
         num_map[num] = i
     return[]
 
+# Testes para find_duplicates
+assert find_duplicates([1, 2, 3, 2, 4, 5, 1]) == [1, 2]
+assert find_duplicates([1, 2, 3, 4, 5]) == []
+assert find_duplicates([1, 1, 1, 1]) == [1]
 
-print( first_non_repeating_char('leetcode') )
+# Testes para first_non_repeating_char
+assert first_non_repeating_char("aabbcdd") == "c"
+assert first_non_repeating_char("aabbcc") == None
+assert first_non_repeating_char("abc") == "a"
+assert first_non_repeating_char("") == None
 
-print( first_non_repeating_char('hello') )
-
-print( first_non_repeating_char('aabbcc') )
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    l
-    h
-    None
-
-"""
-
-print ( find_duplicates([1, 2, 3, 4, 5]) )
-print ( find_duplicates([1, 1, 2, 2, 3]) )
-print ( find_duplicates([1, 1, 1, 1, 1]) )
-print ( find_duplicates([1, 2, 3, 3, 3, 4, 4, 5]) )
-print ( find_duplicates([1, 1, 2, 2, 2, 3, 3, 3, 3]) )
-print ( find_duplicates([1, 1, 1, 2, 2, 2, 3, 3, 3, 3]) )
-print ( find_duplicates([]) )
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    []
-    [1, 2]
-    [1]
-    [3, 4]
-    [1, 2, 3]
-    [1, 2, 3]
-    []
-
-"""
+# Testes para two_sum
+assert two_sum([2, 7, 11, 15], 9) == [0, 1]
+assert two_sum([3, 2, 4], 6) == [1, 2]
+assert two_sum([3, 3], 6) == [0, 1]
+assert two_sum([1, 2, 3], 7) == []
