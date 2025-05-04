@@ -26,18 +26,18 @@ def two_sum(nums, target):
         num_map[num] = i
     return[]
 
-# Testes para find_duplicates
+# tests for find_duplicates
 assert find_duplicates([1, 2, 3, 2, 4, 5, 1]) == [1, 2]
 assert find_duplicates([1, 2, 3, 4, 5]) == []
 assert find_duplicates([1, 1, 1, 1]) == [1]
 
-# Testes para first_non_repeating_char
+# tests for first_non_repeating_char
 assert first_non_repeating_char("aabbcdd") == "c"
 assert first_non_repeating_char("aabbcc") == None
 assert first_non_repeating_char("abc") == "a"
 assert first_non_repeating_char("") == None
 
-# Testes para two_sum
+# tests for two_sum
 assert two_sum([2, 7, 11, 15], 9) == [0, 1]
 assert two_sum([3, 2, 4], 6) == [1, 2]
 assert two_sum([3, 3], 6) == [0, 1]
